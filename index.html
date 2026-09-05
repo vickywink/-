@@ -1,0 +1,3324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<meta name="theme-color" content="#111827">
+
+<title>法国＋意大利16日旅行手册</title>
+
+<style>
+
+/* =========================================================
+   基础
+========================================================= */
+
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #172033;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+
+    --blue: #5965f2;
+    --blue-light: #eef0ff;
+
+    --green: #16a085;
+    --green-light: #e9f8f4;
+
+    --orange: #e59b25;
+    --orange-light: #fff5df;
+
+    --red: #e25d5d;
+
+    --shadow:
+        0 8px 28px rgba(20, 30, 55, 0.07);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "PingFang SC",
+        "Microsoft YaHei",
+        sans-serif;
+
+    line-height: 1.55;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   页面
+========================================================= */
+
+.container {
+    max-width: 980px;
+
+    margin: 0 auto;
+
+    padding:
+        16px
+        14px
+        60px;
+}
+
+
+/* =========================================================
+   顶部
+========================================================= */
+
+.header {
+    padding: 8px 2px 18px;
+}
+
+.eyebrow {
+    font-size: 11px;
+
+    color: var(--muted);
+
+    letter-spacing: 0.12em;
+
+    font-weight: 700;
+}
+
+.title {
+    margin-top: 4px;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    line-height: 1.15;
+}
+
+.subtitle {
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   卡片
+========================================================= */
+
+.card {
+    background: var(--card);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius: 20px;
+
+    padding: 17px;
+
+    margin: 12px 0;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   倒计时
+========================================================= */
+
+.countdown-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #29355f
+        );
+
+    color: white;
+
+    border: 0;
+}
+
+.countdown-card .muted {
+    color: #cbd5e1;
+}
+
+.next-label {
+
+    font-size: 11px;
+
+    letter-spacing: .08em;
+
+    color: #cbd5e1;
+}
+
+.next-title {
+
+    margin-top: 4px;
+
+    font-size: 20px;
+
+    font-weight: 900;
+}
+
+.next-time {
+
+    margin-top: 3px;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+}
+
+.countdown {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 7px;
+
+    margin-top: 15px;
+}
+
+.count-box {
+
+    background:
+        rgba(255,255,255,.10);
+
+    border-radius: 14px;
+
+    padding: 9px 5px;
+
+    text-align: center;
+}
+
+.count-number {
+
+    font-size: 25px;
+
+    font-weight: 900;
+}
+
+.count-label {
+
+    font-size: 10px;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================================
+   标题
+========================================================= */
+
+.section-title {
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    margin:
+        22px 2px
+        9px;
+}
+
+
+/* =========================================================
+   全程路线
+========================================================= */
+
+.route-map {
+
+    height: 245px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #f0f3f8;
+
+    border:
+        1px solid
+        var(--line);
+}
+
+.route-map svg {
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.map-label {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    fill: #4b5563;
+}
+
+.route-legend {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 9px;
+}
+
+.legend {
+
+    font-size: 11px;
+
+    padding:
+        4px
+        9px;
+
+    border-radius: 999px;
+
+    background: #f3f4f6;
+}
+
+
+/* =========================================================
+   每日行程
+========================================================= */
+
+.day-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    align-items: flex-start;
+}
+
+.day-badge {
+
+    display: inline-block;
+
+    padding:
+        4px
+        9px;
+
+    border-radius: 999px;
+
+    background: var(--blue-light);
+
+    color: #4754d6;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.day-area {
+
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+.day-date {
+
+    margin-top: 2px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   路线
+========================================================= */
+
+.route-line {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    align-items: center;
+
+    margin:
+        11px 0;
+
+    font-weight: 800;
+
+    font-size: 14px;
+}
+
+.route-arrow {
+
+    color: #9ca3af;
+}
+
+
+/* =========================================================
+   普通活动
+========================================================= */
+
+.activity {
+
+    display: flex;
+
+    gap: 12px;
+
+    padding:
+        9px 0;
+
+    border-bottom:
+        1px dashed
+        var(--line);
+}
+
+.activity:last-child {
+    border-bottom: 0;
+}
+
+.activity-time {
+
+    width: 82px;
+
+    flex: none;
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+.activity-content {
+
+    flex: 1;
+}
+
+.activity-title {
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.activity-description {
+
+    margin-top: 2px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+.google-map {
+
+    display: inline-block;
+
+    margin-top: 3px;
+
+    color: #4653dc;
+
+    font-size: 12px;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   航班
+========================================================= */
+
+.flight {
+
+    margin:
+        10px 0;
+
+    padding: 13px;
+
+    background: #f7f8ff;
+
+    border:
+        1px solid
+        #dfe4ff;
+
+    border-radius: 17px;
+}
+
+.flight-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.flight-number {
+
+    color: #4652d0;
+
+    font-size: 19px;
+
+    font-weight: 900;
+}
+
+.flight-status {
+
+    padding:
+        5px 9px;
+
+    border-radius: 999px;
+
+    background: var(--blue);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.flight-route {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        65px
+        1fr;
+
+    gap: 8px;
+
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.airport strong {
+
+    display: block;
+
+    font-size: 23px;
+
+    font-weight: 900;
+}
+
+.airport-name {
+
+    display: block;
+
+    margin-top: 1px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+.airport-terminal {
+
+    display: inline-block;
+
+    margin-top: 3px;
+
+    padding:
+        2px
+        6px;
+
+    background: var(--blue-light);
+
+    color: #4754d6;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.flight-time {
+
+    text-align: center;
+
+    font-size: 19px;
+
+    font-weight: 900;
+}
+
+.flight-time-label {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+.flight-arrival {
+
+    margin-top: 9px;
+
+    padding-top: 8px;
+
+    border-top:
+        1px solid
+        #e5e7eb;
+
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+.flight-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 10px;
+}
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 0;
+
+    border-radius: 11px;
+
+    padding:
+        8px
+        11px;
+
+    background: var(--blue-light);
+
+    color: #3f4ccc;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.btn-gray {
+
+    background: #eef2f7;
+
+    color: #374151;
+}
+
+
+/* =========================================================
+   酒店
+========================================================= */
+
+.hotel {
+
+    margin-top: 10px;
+
+    padding: 13px;
+
+    border-radius: 16px;
+
+    background: #fbfaf7;
+
+    border:
+        1px solid
+        #eee7d9;
+}
+
+.hotel-name {
+
+    font-size: 15px;
+
+    font-weight: 900;
+}
+
+.hotel-info {
+
+    margin-top: 4px;
+
+    color: #6b6255;
+
+    font-size: 12px;
+}
+
+.hotel-map {
+
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #765f2b;
+
+    font-size: 12px;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   备注
+========================================================= */
+
+.note {
+
+    margin-top: 11px;
+
+    padding:
+        10px
+        12px;
+
+    border-left:
+        4px solid
+        var(--orange);
+
+    border-radius: 10px;
+
+    background: var(--orange-light);
+
+    font-size: 13px;
+}
+
+.note-title {
+
+    font-weight: 900;
+}
+
+.note ul {
+
+    margin:
+        4px 0
+        0;
+
+    padding-left: 20px;
+}
+
+.note li {
+
+    margin: 3px 0;
+}
+
+
+/* =========================================================
+   Footer
+========================================================= */
+
+.footer {
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    padding:
+        20px 0;
+}
+
+
+/* =========================================================
+   手机
+========================================================= */
+
+@media(max-width: 640px) {
+
+    .container {
+        padding:
+            13px
+            10px
+            45px;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .count-number {
+        font-size: 21px;
+    }
+
+    .flight-route {
+        grid-template-columns:
+            1fr
+            50px
+            1fr;
+    }
+
+    .airport strong {
+        font-size: 20px;
+    }
+
+    .activity-time {
+        width: 72px;
+    }
+}
+
+
+/* =========================================================
+   深色模式
+========================================================= */
+
+@media(prefers-color-scheme: dark) {
+
+    :root {
+
+        --bg: #0b1020;
+
+        --card: #121827;
+
+        --text: #eef2ff;
+
+        --muted: #9ca7bb;
+
+        --line: #253047;
+    }
+
+    .flight {
+
+        background: #151b31;
+
+        border-color: #29345d;
+    }
+
+    .hotel {
+
+        background: #1b1915;
+
+        border-color: #3b3528;
+    }
+
+    .route-map {
+
+        background: #151b27;
+    }
+
+    .legend {
+
+        background: #1a2130;
+    }
+
+    .flight-arrival {
+
+        border-color: #293247;
+    }
+
+    .note {
+
+        background: #302912;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+<!-- =====================================================
+     顶部
+===================================================== -->
+
+<header class="header">
+
+    <div class="eyebrow">
+        TRAVEL HANDBOOK · 2026
+    </div>
+
+    <div class="title">
+        法国＋意大利 16日
+    </div>
+
+    <div class="subtitle">
+        2026/09/06 — 2026/09/23
+        · 厦门 → 法国 → 意大利 → 北京 → 厦门
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     下一项行程 / 倒计时
+===================================================== -->
+
+<section class="card countdown-card">
+
+    <div class="next-label">
+        关注 · 下一项行程
+    </div>
+
+    <div
+        id="nextTitle"
+        class="next-title">
+        正在读取行程…
+    </div>
+
+    <div
+        id="nextTime"
+        class="next-time">
+    </div>
+
+
+    <div class="countdown">
+
+        <div class="count-box">
+            <div
+                id="days"
+                class="count-number">
+                --
+            </div>
+
+            <div class="count-label">
+                天
+            </div>
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                id="hours"
+                class="count-number">
+                --
+            </div>
+
+            <div class="count-label">
+                小时
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                id="minutes"
+                class="count-number">
+                --
+            </div>
+
+            <div class="count-label">
+                分钟
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                id="seconds"
+                class="count-number">
+                --
+            </div>
+
+            <div class="count-label">
+                秒
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     全程路线
+===================================================== -->
+
+<section class="card">
+
+    <div
+        class="section-title"
+        style="margin-top:0">
+
+        全程路线
+
+    </div>
+
+
+    <div class="route-map">
+
+        <svg
+            viewBox="0 0 900 245"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <!-- 法国路线 -->
+
+            <path
+                d="
+                    M75 65
+                    C175 35 260 55 350 90
+                    S515 155 625 105
+                "
+                fill="none"
+                stroke="#5965f2"
+                stroke-width="5"
+                stroke-linecap="round"
+            />
+
+
+            <!-- 意大利路线 -->
+
+            <path
+                d="
+                    M350 90
+                    C445 70 535 95 625 105
+                    S735 165 830 185
+                "
+                fill="none"
+                stroke="#16a085"
+                stroke-width="5"
+                stroke-dasharray="9 8"
+            />
+
+
+            <!-- Paris -->
+
+            <circle
+                cx="75"
+                cy="65"
+                r="7"
+                fill="#5965f2"
+            />
+
+            <text
+                x="58"
+                y="46"
+                class="map-label">
+                Paris
+            </text>
+
+
+            <!-- Milan -->
+
+            <circle
+                cx="350"
+                cy="90"
+                r="7"
+                fill="#5965f2"
+            />
+
+            <text
+                x="332"
+                y="71"
+                class="map-label">
+                Milan
+            </text>
+
+
+            <!-- Dolomites -->
+
+            <circle
+                cx="485"
+                cy="120"
+                r="7"
+                fill="#16a085"
+            />
+
+            <text
+                x="448"
+                y="145"
+                class="map-label">
+                Dolomites
+            </text>
+
+
+            <!-- Venice -->
+
+            <circle
+                cx="625"
+                cy="105"
+                r="7"
+                fill="#16a085"
+            />
+
+            <text
+                x="606"
+                y="86"
+                class="map-label">
+                Venice
+            </text>
+
+
+            <!-- Florence -->
+
+            <circle
+                cx="720"
+                cy="145"
+                r="7"
+                fill="#16a085"
+            />
+
+            <text
+                x="700"
+                y="129"
+                class="map-label">
+                Florence
+            </text>
+
+
+            <!-- Pisa -->
+
+            <circle
+                cx="770"
+                cy="165"
+                r="7"
+                fill="#16a085"
+            />
+
+            <text
+                x="750"
+                y="190"
+                class="map-label">
+                Pisa
+            </text>
+
+
+            <!-- Rome -->
+
+            <circle
+                cx="830"
+                cy="185"
+                r="7"
+                fill="#e25d5d"
+            />
+
+            <text
+                x="811"
+                y="166"
+                class="map-label">
+                Rome
+            </text>
+
+        </svg>
+
+    </div>
+
+
+    <div class="route-legend">
+
+        <span class="legend">
+            蓝：法国
+        </span>
+
+        <span class="legend">
+            绿：意大利
+        </span>
+
+        <span class="legend">
+            红：返程
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     每日行程
+===================================================== -->
+
+<div id="days"></div>
+
+
+<footer class="footer">
+
+    所有时间均按照当地时间显示。
+
+    <br>
+
+    航班登机口、值机柜台等临时信息，
+    以出发当天机场及航空公司实时信息为准。
+
+</footer>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   飞常准 App
+========================================================= */
+
+const VARIFLIGHT_APP =
+"https://apps.apple.com/cn/app/%E9%A3%9E%E5%B8%B8%E5%87%86-%E8%88%AA%E7%8F%AD%E5%8A%A8%E6%80%81%E6%9C%BA%E7%A5%A8%E8%B4%AD%E4%B9%B0%E6%9F%A5%E8%AF%A2%E8%BF%BD%E8%B8%AA%E5%80%BC%E6%9C%BA/id498818574";
+
+
+/* =========================================================
+   Google Maps
+========================================================= */
+
+function googleMaps(query) {
+
+    return (
+        "https://www.google.com/maps/search/?api=1&query="
+        +
+        encodeURIComponent(query)
+    );
+
+}
+
+
+/* =========================================================
+   航班资料
+========================================================= */
+
+const flights = {
+
+    CA1872: {
+
+        date: "2026-09-06",
+
+        fromCode: "XMN",
+
+        fromName: "厦门高崎国际机场",
+
+        fromTerminal: "T3",
+
+        departure: "18:45",
+
+        toCode: "PEK",
+
+        toName: "北京首都国际机场",
+
+        toTerminal: "T3",
+
+        arrival: "21:55"
+    },
+
+
+    CA875: {
+
+        date: "2026-09-07",
+
+        fromCode: "PEK",
+
+        fromName: "北京首都国际机场",
+
+        fromTerminal: "T3",
+
+        departure: "01:55",
+
+        toCode: "CDG",
+
+        toName: "巴黎戴高乐机场",
+
+        toTerminal: "T1",
+
+        arrival: "06:45"
+    },
+
+
+    U23824: {
+
+        date: "2026-09-08",
+
+        fromCode: "ORY",
+
+        fromName: "巴黎奥利机场",
+
+        fromTerminal: "T1",
+
+        departure: "20:35",
+
+        toCode: "MXP",
+
+        toName: "米兰马尔彭萨机场",
+
+        toTerminal: "T2",
+
+        arrival: "22:00"
+    },
+
+
+    CA940: {
+
+        date: "2026-09-22",
+
+        fromCode: "FCO",
+
+        fromName: "罗马菲乌米奇诺机场",
+
+        fromTerminal: "T3",
+
+        departure: "20:30",
+
+        toCode: "PEK",
+
+        toName: "北京首都国际机场",
+
+        toTerminal: "T3",
+
+        arrival: "12:45 +1"
+    },
+
+
+    CA1815: {
+
+        date: "2026-09-23",
+
+        fromCode: "PEK",
+
+        fromName: "北京首都国际机场",
+
+        fromTerminal: "T3",
+
+        departure: "16:30",
+
+        toCode: "XMN",
+
+        toName: "厦门高崎国际机场",
+
+        toTerminal: "T3",
+
+        arrival: "19:30"
+    }
+
+};
+
+
+/* =========================================================
+   酒店
+========================================================= */
+
+const hotels = {
+
+    D1: {
+
+        name:
+        "巴黎朗顿酒店 Hotel London",
+
+        stay:
+        "9/7 入住 — 9/8 离店",
+
+        checkin:
+        "15:00",
+
+        checkout:
+        "12:00",
+
+        map:
+        "Hotel London Paris"
+    },
+
+
+    D2: {
+
+        name:
+        "Holiday Inn Express MILAN-MALPENSA AIRPORT",
+
+        stay:
+        "9/8 入住 — 9/9 离店",
+
+        checkin:
+        "15:00",
+
+        checkout:
+        "12:00",
+
+        map:
+        "Holiday Inn Express Milan Malpensa Airport"
+    },
+
+
+    D3: {
+
+        name:
+        "Palazzo Loreto Hotel Milano",
+
+        stay:
+        "9/9 入住 — 9/11 离店",
+
+        checkin:
+        "14:00",
+
+        checkout:
+        "11:00",
+
+        map:
+        "Palazzo Loreto Hotel Milano"
+    },
+
+
+    D5: {
+
+        name:
+        "Hotel Carmen Dolomites",
+
+        stay:
+        "9/11 入住 — 9/13 离店",
+
+        checkin:
+        "14:00",
+
+        checkout:
+        "11:00",
+
+        map:
+        "Hotel Carmen Dolomites Santa Cristina"
+    },
+
+
+    D7: {
+
+        name:
+        "Best Western Plus Hotel Bologna",
+
+        stay:
+        "9/13 入住 — 9/15 离店",
+
+        checkin:
+        "14:00",
+
+        checkout:
+        "12:00",
+
+        map:
+        "Best Western Plus Hotel Bologna Mestre"
+    },
+
+
+    D9: {
+
+        name:
+        "Hilton Garden Inn Florence Novoli",
+
+        stay:
+        "9/15 入住 — 9/19 离店",
+
+        checkin:
+        "15:00",
+
+        checkout:
+        "12:00",
+
+        map:
+        "Hilton Garden Inn Florence Novoli"
+    },
+
+
+    D13: {
+
+        name:
+        "Hotel Palazzo di Valli",
+
+        stay:
+        "9/19 入住 — 9/21 离店",
+
+        checkin:
+        "14:00",
+
+        checkout:
+        "11:00",
+
+        map:
+        "Hotel Palazzo di Valli Siena"
+    },
+
+
+    D15: {
+
+        name:
+        "GARAGE47 Storica Officina Meccanica LOFT B&B IN PIENZA",
+
+        stay:
+        "9/21 入住 — 9/22 离店",
+
+        checkin:
+        "15:00",
+
+        checkout:
+        "10:30",
+
+        map:
+        "GARAGE47 Storica Officina Meccanica Pienza"
+    }
+
+};
+
+
+/* =========================================================
+   每日行程
+========================================================= */
+
+const itinerary = [
+
+    {
+
+        id: "D1",
+
+        date: "09/06–09/07",
+
+        area: "中国 → 法国",
+
+        route:
+        "厦门 → 北京 → 巴黎 → 吉维尼 → 巴黎",
+
+        items: [
+
+            {
+                type: "flight",
+                flight: "CA1872"
+            },
+
+            {
+                type: "flight",
+                flight: "CA875"
+            },
+
+            {
+                time: "09:57",
+
+                title:
+                "巴黎 → 吉维尼",
+
+                place:
+                "Maison et jardins de Claude Monet-Giverny",
+
+                description:
+                "11:44 抵达；12:00–15:00 莫奈花园＋吉维尼小镇＋用餐"
+            },
+
+            {
+                time: "15:57",
+
+                title:
+                "吉维尼 → 巴黎",
+
+                place:
+                "Paris",
+
+                description:
+                "16:48 抵达；前往 Citypharma"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D2",
+
+        date: "09/08",
+
+        area: "法国 → 意大利",
+
+        route:
+        "巴黎 → 米兰",
+
+        items: [
+
+            {
+                time: "10:00–13:00",
+
+                title:
+                "Galeries Lafayette ＋ Le Marais",
+
+                place:
+                "Paris",
+
+                description:
+                "逛街＋午餐"
+            },
+
+            {
+                time: "13:30–16:30",
+
+                title:
+                "Musée d’Orsay",
+
+                place:
+                "Musée d’Orsay",
+
+                description:
+                "奥赛博物馆"
+            },
+
+            {
+                time: "17:00",
+
+                title:
+                "前往巴黎奥利机场",
+
+                place:
+                "Paris Orly Airport",
+
+                description:
+                "值机＋安检"
+            },
+
+            {
+                type: "flight",
+
+                flight:
+                "U23824"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D3",
+
+        date: "09/09",
+
+        area: "意大利",
+
+        route:
+        "米兰",
+
+        items: [
+
+            {
+                time: "全天",
+
+                title:
+                "Milan airport plane spotting",
+
+                place:
+                "Milan",
+
+                description:
+                "机场拍飞机"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D4",
+
+        date: "09/10",
+
+        area: "意大利",
+
+        route:
+        "米兰",
+
+        items: [
+
+            {
+                time: "08:15",
+
+                title:
+                "Santa Maria delle Grazie",
+
+                place:
+                "Santa Maria delle Grazie Milan",
+
+                description:
+                "《最后的晚餐》"
+            },
+
+            {
+                time: "上午",
+
+                title:
+                "Pinacoteca Ambrosiana",
+
+                place:
+                "Pinacoteca Ambrosiana",
+
+                description:
+                "安布罗修斯图书馆／美术馆"
+            },
+
+            {
+                time: "中午",
+
+                title:
+                "Duomo di Milano",
+
+                place:
+                "Duomo di Milano",
+
+                description:
+                "米兰大教堂外观"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "BGY plane spotting",
+
+                place:
+                "Milan Bergamo Airport",
+
+                description:
+                "若 Buzz 出现则优先，之后回市区"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D5",
+
+        date: "09/11",
+
+        area: "意大利",
+
+        route:
+        "米兰 → 多洛米蒂",
+
+        items: [
+
+            {
+                time: "08:30–18:00",
+
+                title:
+                "Pinacoteca di Brera",
+
+                place:
+                "Pinacoteca di Brera",
+
+                description:
+                "布雷拉画廊"
+            },
+
+            {
+                time: "之后",
+
+                title:
+                "取车 → Val di Funes",
+
+                place:
+                "Milano Centrale",
+
+                description:
+                "自驾约 3h19"
+            },
+
+            {
+                time: "傍晚",
+
+                title:
+                "Chiesetta di San Giovanni in Ranui",
+
+                place:
+                "Chiesetta di San Giovanni in Ranui",
+
+                description:
+                "拍摄教堂"
+            },
+
+            {
+                time: "傍晚",
+
+                title:
+                "Chiesa di Santa Maddalena",
+
+                place:
+                "Chiesa di Santa Maddalena",
+
+                description:
+                "山坡高处机位"
+            }
+
+        ],
+
+        note: [
+
+            "提前买布雷拉画廊门票，作品《吻》《圣母的婚礼》《哀悼基督》",
+
+            "备抓绒裤、保暖内衣、羽绒服、冲锋衣、帽子手套",
+
+            "准备硬币用于停车"
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D6",
+
+        date: "09/12",
+
+        area: "意大利",
+
+        route:
+        "多洛米蒂｜自驾",
+
+        items: [
+
+            {
+                time: "上午",
+
+                title:
+                "Seceda",
+
+                place:
+                "Seceda",
+
+                description:
+                "上午登 Seceda"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Alpe di Siusi",
+
+                place:
+                "Alpe di Siusi",
+
+                description:
+                "下午前往 Alpe di Siusi"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D7",
+
+        date: "09/13",
+
+        area: "意大利",
+
+        route:
+        "多洛米蒂 → 威尼斯｜自驾",
+
+        items: [
+
+            {
+                time: "早晨",
+
+                title:
+                "Lago di Braies",
+
+                place:
+                "Lago di Braies",
+
+                description:
+                "从西向东约 1.5h；争取 09:00 前到，船 10:00 开"
+            },
+
+            {
+                time: "之后",
+
+                title:
+                "前往 Venice",
+
+                place:
+                "Venice Mestre",
+
+                description:
+                "还车于 Venice station"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D8",
+
+        date: "09/14",
+
+        area: "意大利",
+
+        route:
+        "威尼斯",
+
+        items: [
+
+            {
+                time: "上午",
+
+                title:
+                "Murano",
+
+                place:
+                "Murano",
+
+                description:
+                "穆拉诺岛"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Burano",
+
+                place:
+                "Burano",
+
+                description:
+                "布拉诺岛"
+            },
+
+            {
+                time: "傍晚",
+
+                title:
+                "Venice main island",
+
+                place:
+                "Venice",
+
+                description:
+                "威尼斯主岛"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D9",
+
+        date: "09/15",
+
+        area: "意大利",
+
+        route:
+        "威尼斯 → 佛罗伦萨｜火车",
+
+        items: [
+
+            {
+                time: "07:38",
+
+                title:
+                "火车 Venezia Mestre → Firenze S.M. Novella",
+
+                place:
+                "Venezia Mestre",
+
+                description:
+                "09:39 抵达"
+            },
+
+            {
+                time: "12:00–13:00",
+
+                title:
+                "Mercato Centrale",
+
+                place:
+                "Mercato Centrale Firenze",
+
+                description:
+                "中央市场"
+            },
+
+            {
+                time: "13:00–15:00",
+
+                title:
+                "Duomo di Firenze",
+
+                place:
+                "Duomo di Firenze",
+
+                description:
+                "13；00准时进入教堂地下参观"
+            },
+
+            {
+                time: "15:15–16:00",
+
+                title:
+                "Torre di Arnolfo",
+
+                place:
+                "Torre di Arnolfo",
+
+                description:
+                "阿诺尔福塔"
+            }
+
+        ],
+
+        note: [
+
+            "不背双肩包",
+
+            "13；00准时进入教堂地下参观",
+
+            "米开朗基罗广场：树洞机位",
+
+            "伴手礼：cammilli",
+
+            "城市公交罢工",
+
+            "可以和圣母百合花大教堂合影：view on art rooftop cocktail bar"
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D10",
+
+        date: "09/16",
+
+        area: "意大利",
+
+        route:
+        "佛罗伦萨",
+
+        items: [
+
+            {
+                time: "08:30–12:00",
+
+                title:
+                "Uffizi",
+
+                place:
+                "Galleria degli Uffizi",
+
+                description:
+                "乌菲兹美术馆"
+            },
+
+            {
+                time: "12:00–13:00",
+
+                title:
+                "Ponte Vecchio",
+
+                place:
+                "Ponte Vecchio",
+
+                description:
+                "老桥＋午餐"
+            },
+
+            {
+                time: "13:10–17:00",
+
+                title:
+                "Palazzo Pitti ＋ Boboli",
+
+                place:
+                "Palazzo Pitti",
+
+                description:
+                "碧提宫＋波波里花园"
+            },
+
+            {
+                time: "18:00",
+
+                title:
+                "San Miniato al Monte",
+
+                place:
+                "Basilica di San Miniato al Monte",
+
+                description:
+                "日落"
+            }
+
+        ],
+
+        note: [
+
+            "不背双肩包",
+
+            "乌菲兹美术馆与碧提宫使用联票"
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D11",
+
+        date: "09/17",
+
+        area: "意大利",
+
+        route:
+        "佛罗伦萨 → 比萨 → 利沃诺 → 佛罗伦萨｜火车",
+
+        items: [
+
+            {
+                time: "07:28",
+
+                title:
+                "火车 Firenze S.M. Novella → Pisa Centrale",
+
+                place:
+                "Firenze Santa Maria Novella",
+
+                description:
+                "08:28 抵达"
+            },
+
+            {
+                time: "09:15–11:30",
+
+                title:
+                "Leaning Tower ＋ Cathedral",
+
+                place:
+                "Leaning Tower of Pisa",
+
+                description:
+                "比萨斜塔＋大教堂"
+            },
+
+            {
+                time: "11:30–14:00",
+
+                title:
+                "Knights’ Square ＋ river walk",
+
+                place:
+                "Piazza dei Cavalieri Pisa",
+
+                description:
+                "骑士广场＋河边＋午餐"
+            },
+
+            {
+                time: "14:30",
+
+                title:
+                "New Venice",
+
+                place:
+                "Quartiere Venezia Livorno",
+
+                description:
+                "利沃诺新威尼斯"
+            },
+
+            {
+                time: "14:30–18:00",
+
+                title:
+                "Terrazza Mascagni",
+
+                place:
+                "Terrazza Mascagni",
+
+                description:
+                "马斯卡尼露台"
+            },
+
+            {
+                time: "18:07",
+
+                title:
+                "火车 Livorno Centrale → Firenze S.M. Novella",
+
+                place:
+                "Livorno Centrale",
+
+                description:
+                "19:33 抵达"
+            }
+
+        ],
+
+        note: [
+
+            "提早存包",
+
+            "提前排队"
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D12",
+
+        date: "09/18",
+
+        area: "意大利",
+
+        route:
+        "佛罗伦萨",
+
+        items: [
+
+            {
+                time: "全天",
+
+                title:
+                "Outlet shopping",
+
+                place:
+                "Florence outlet",
+
+                description:
+                "购买 Prada、太阳镜"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D13",
+
+        date: "09/19",
+
+        area: "意大利",
+
+        route:
+        "佛罗伦萨 → 圣吉米尼亚诺 → 锡耶纳｜自驾",
+
+        items: [
+
+            {
+                time: "上午",
+
+                title:
+                "Florence airport 取车",
+
+                place:
+                "Florence Airport",
+
+                description:
+                "开始自驾"
+            },
+
+            {
+                time: "上午",
+
+                title:
+                "San Gimignano panorama",
+
+                place:
+                "San Gimignano",
+
+                description:
+                "先拍全景"
+            },
+
+            {
+                time: "中午",
+
+                title:
+                "Piazza della Cisterna",
+
+                place:
+                "Piazza della Cisterna",
+
+                description:
+                "水井广场"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Duomo",
+
+                place:
+                "Duomo di San Gimignano",
+
+                description:
+                "大教堂"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Parco della Rocca",
+
+                place:
+                "Parco della Rocca",
+
+                description:
+                "城堡公园"
+            },
+
+            {
+                time: "16:00",
+
+                title:
+                "Torre Grossa",
+
+                place:
+                "Torre Grossa",
+
+                description:
+                "登塔"
+            },
+
+            {
+                time: "之后",
+
+                title:
+                "San Gimignano → Siena",
+
+                place:
+                "Siena",
+
+                description:
+                "车程约 40 min"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D14",
+
+        date: "09/20",
+
+        area: "意大利",
+
+        route:
+        "锡耶纳｜自驾",
+
+        items: [
+
+            {
+                time: "09:30",
+
+                title:
+                "Vista Panoramica de Siena",
+
+                place:
+                "Vista Panoramica de Siena",
+
+                description:
+                "锡耶纳全景"
+            },
+
+            {
+                time: "上午",
+
+                title:
+                "Siena Cathedral",
+
+                place:
+                "Siena Cathedral",
+
+                description:
+                "锡耶纳大教堂"
+            },
+
+            {
+                time: "中午",
+
+                title:
+                "Santa Maria della Scala",
+
+                place:
+                "Santa Maria della Scala",
+
+                description:
+                "圣母玛利亚医院"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Piazza del Campo",
+
+                place:
+                "Piazza del Campo",
+
+                description:
+                "田野广场"
+            },
+
+            {
+                time: "16:30",
+
+                title:
+                "Torre del Mangia",
+
+                place:
+                "Torre del Mangia",
+
+                description:
+                "曼吉亚塔"
+            },
+
+            {
+                time: "17:30",
+
+                title:
+                "Fortezza Medicea",
+
+                place:
+                "Fortezza Medicea",
+
+                description:
+                "日落"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D15",
+
+        date: "09/21",
+
+        area: "意大利",
+
+        route:
+        "锡耶纳 → Pienza｜自驾",
+
+        items: [
+
+            {
+                time: "上午",
+
+                title:
+                "Agriturismo Baccoleno",
+
+                place:
+                "Agriturismo Baccoleno",
+
+                description:
+                "托斯卡纳景观"
+            },
+
+            {
+                time: "上午",
+
+                title:
+                "Cipressi di San Quirico d’Orcia",
+
+                place:
+                "Cipressi di San Quirico d’Orcia",
+
+                description:
+                "柏树机位"
+            },
+
+            {
+                time: "中午",
+
+                title:
+                "Cappella della Madonna di Vitaleta",
+
+                place:
+                "Cappella della Madonna di Vitaleta",
+
+                description:
+                "维塔莱塔教堂"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Farmhouse Poggio Covili",
+
+                place:
+                "Poggio Covili",
+
+                description:
+                "拍摄农舍"
+            },
+
+            {
+                time: "下午",
+
+                title:
+                "Agriturismo Podere Casenova",
+
+                place:
+                "Agriturismo Podere Casenova",
+
+                description:
+                "拍摄"
+            },
+
+            {
+                time: "傍晚",
+
+                title:
+                "Pienza citywalk",
+
+                place:
+                "Pienza",
+
+                description:
+                "皮恩扎散步"
+            }
+
+        ]
+
+    },
+
+
+    {
+
+        id: "D16",
+
+        date: "09/22–09/23",
+
+        area: "意大利 → 中国",
+
+        route:
+        "Pienza → 罗马 → 北京 → 厦门",
+
+        items: [
+
+            {
+                time: "白天",
+
+                title:
+                "Pienza → FCO",
+
+                place:
+                "Rome Fiumicino Airport",
+
+                description:
+                "车程约 2.5h；机场还车"
+            },
+
+            {
+                type:
+                "flight",
+
+                flight:
+                "CA940"
+            },
+
+            {
+                type:
+                "flight",
+
+                flight:
+                "CA1815"
+            }
+
+        ],
+
+        note: [
+
+            "Max Mara coat"
+
+        ]
+
+    }
+
+];
+
+
+/* =========================================================
+   航班 HTML
+========================================================= */
+
+function createFlightHTML(flightNumber) {
+
+    const f =
+        flights[flightNumber];
+
+    if (!f) {
+        return "";
+    }
+
+
+    return `
+
+    <div class="flight">
+
+        <div class="flight-header">
+
+            <div class="flight-number">
+                ${flightNumber}
+            </div>
+
+            <div class="flight-status">
+                飞常准
+            </div>
+
+        </div>
+
+
+        <div class="flight-route">
+
+
+            <!-- 出发 -->
+
+            <a
+                class="airport"
+                href="${googleMaps(
+                    f.fromName
+                )}"
+                target="_blank"
+            >
+
+                <strong>
+                    ${f.fromCode}
+                </strong>
+
+                <span class="airport-name">
+                    ${f.fromName}
+                </span>
+
+                <span class="airport-terminal">
+                    ${f.fromTerminal}
+                </span>
+
+            </a>
+
+
+            <!-- 时间 -->
+
+            <div class="flight-time">
+
+                ${f.departure}
+
+                <span class="flight-time-label">
+                    当地时间
+                </span>
+
+            </div>
+
+
+            <!-- 到达 -->
+
+            <a
+                class="airport"
+                href="${googleMaps(
+                    f.toName
+                )}"
+                target="_blank"
+            >
+
+                <strong>
+                    ${f.toCode}
+                </strong>
+
+                <span class="airport-name">
+                    ${f.toName}
+                </span>
+
+                <span class="airport-terminal">
+                    ${f.toTerminal}
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+        <div class="flight-arrival">
+
+            到达时间：
+            <strong>
+                ${f.arrival}
+            </strong>
+
+            · ${f.toName}
+            ${f.toTerminal}
+
+            <br>
+
+            登机口：
+            以出发当天机场实时信息为准
+
+        </div>
+
+
+        <div class="flight-actions">
+
+
+            <button
+                class="btn"
+                onclick="openVariflight('${flightNumber}')"
+            >
+                ✈ 打开飞常准
+            </button>
+
+
+            <a
+                class="btn btn-gray"
+                href="${googleMaps(
+                    f.fromName
+                )}"
+                target="_blank"
+            >
+                出发机场地图
+            </a>
+
+
+            <a
+                class="btn btn-gray"
+                href="${googleMaps(
+                    f.toName
+                )}"
+                target="_blank"
+            >
+                到达机场地图
+            </a>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   飞常准 App
+========================================================= */
+
+function openVariflight(flightNumber) {
+
+    /*
+        尝试打开飞常准 App。
+
+        如果手机没有安装，
+        约 1.2 秒后跳转 App Store。
+    */
+
+    const start =
+        Date.now();
+
+
+    window.location.href =
+        "variflight://flight/"
+        +
+        encodeURIComponent(
+            flightNumber
+        );
+
+
+    setTimeout(
+        function() {
+
+            if (
+                Date.now() - start
+                <
+                1800
+            ) {
+
+                window.location.href =
+                    VARIFLIGHT_APP;
+
+            }
+
+        },
+        1200
+    );
+
+}
+
+
+/* =========================================================
+   酒店 HTML
+========================================================= */
+
+function createHotelHTML(id) {
+
+    const h =
+        hotels[id];
+
+    if (!h) {
+        return "";
+    }
+
+
+    return `
+
+    <div class="hotel">
+
+        <div class="hotel-name">
+            🏨 ${h.name}
+        </div>
+
+
+        <div class="hotel-info">
+
+            ${h.stay}
+
+            <br>
+
+            入住：
+            <strong>
+                ${h.checkin}
+            </strong>
+
+            ·
+
+            退房：
+            <strong>
+                ${h.checkout}
+            </strong>
+
+        </div>
+
+
+        <a
+            class="hotel-map"
+            href="${googleMaps(h.map)}"
+            target="_blank"
+        >
+            ⌖ Google Maps
+        </a>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   活动 HTML
+========================================================= */
+
+function createActivityHTML(item) {
+
+    if (
+        item.type ===
+        "flight"
+    ) {
+
+        return createFlightHTML(
+            item.flight
+        );
+
+    }
+
+
+    return `
+
+    <div class="activity">
+
+        <div class="activity-time">
+
+            ${item.time}
+
+        </div>
+
+
+        <div class="activity-content">
+
+            <div class="activity-title">
+
+                ${item.title}
+
+            </div>
+
+
+            <div class="activity-description">
+
+                ${item.description || ""}
+
+            </div>
+
+
+            <a
+                class="google-map"
+                href="${googleMaps(item.place)}"
+                target="_blank"
+            >
+
+                ⌖ ${item.place}
+                · Google Maps
+
+            </a>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   每日备注
+========================================================= */
+
+function createNoteHTML(note) {
+
+    if (
+        !note ||
+        note.length === 0
+    ) {
+
+        return "";
+
+    }
+
+
+    return `
+
+    <div class="note">
+
+        <div class="note-title">
+            📝 备注
+        </div>
+
+        <ul>
+
+            ${note.map(
+                function(item) {
+
+                    return `
+                    <li>
+                        ${item}
+                    </li>
+                    `;
+
+                }
+            ).join("")}
+
+        </ul>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   渲染每日行程
+========================================================= */
+
+function renderItinerary() {
+
+    const root =
+        document.getElementById(
+            "days"
+        );
+
+
+    root.innerHTML =
+        itinerary.map(
+            function(day) {
+
+
+                const activities =
+                    day.items
+                    .map(
+                        createActivityHTML
+                    )
+                    .join("");
+
+
+                const hotel =
+                    createHotelHTML(
+                        day.id
+                    );
+
+
+                const note =
+                    createNoteHTML(
+                        day.note
+                    );
+
+
+                const route =
+                    day.route
+                    .split(" → ")
+                    .map(
+                        function(
+                            location,
+                            index
+                        ) {
+
+                            return (
+
+                                index > 0
+                                ?
+
+                                `
+                                <span class="route-arrow">
+                                    →
+                                </span>
+                                `
+
+                                :
+
+                                ""
+
+                            )
+
+                            +
+
+                            `
+                            <span>
+                                ${location}
+                            </span>
+                            `;
+
+                        }
+                    )
+                    .join("");
+
+
+                return `
+
+                <section
+                    class="card"
+                    id="${day.id}"
+                >
+
+
+                    <div
+                        class="day-header"
+                    >
+
+                        <div>
+
+                            <span
+                                class="day-badge"
+                            >
+                                ${day.id}
+                            </span>
+
+
+                            <div
+                                class="day-area"
+                            >
+                                ${day.area}
+                            </div>
+
+
+                            <div
+                                class="day-date"
+                            >
+                                ${day.date}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="route-line"
+                    >
+
+                        ${route}
+
+                    </div>
+
+
+                    <div>
+
+                        ${activities}
+
+                    </div>
+
+
+                    ${hotel}
+
+
+                    ${note}
+
+
+                </section>
+
+                `;
+
+            }
+        )
+        .join("");
+
+}
+
+
+/* =========================================================
+   初始化
+========================================================= */
+
+renderItinerary();
+
+
+/* =========================================================
+   倒计时事件
+========================================================= */
+
+const countdownEvents = [
+
+    {
+        time:
+        "2026-09-06T18:45:00+08:00",
+
+        title:
+        "CA1872 · 厦门高崎 T3 → 北京首都 T3"
+    },
+
+
+    {
+        time:
+        "2026-09-07T01:55:00+08:00",
+
+        title:
+        "CA875 · 北京首都 T3 → 巴黎戴高乐 T1"
+    },
+
+
+    {
+        time:
+        "2026-09-08T20:35:00+02:00",
+
+        title:
+        "U23824 · 巴黎奥利 T1 → 米兰马尔彭萨 T2"
+    },
+
+
+    {
+        time:
+        "2026-09-22T20:30:00+02:00",
+
+        title:
+        "CA940 · 罗马 FCO T3 → 北京 PEK T3"
+    },
+
+
+    {
+        time:
+        "2026-09-23T16:30:00+08:00",
+
+        title:
+        "CA1815 · 北京 PEK T3 → 厦门 XMN T3"
+    }
+
+];
+
+
+/* =========================================================
+   倒计时
+========================================================= */
+
+function updateCountdown() {
+
+    const now =
+        Date.now();
+
+
+    const next =
+        countdownEvents.find(
+            function(event) {
+
+                return (
+                    new Date(
+                        event.time
+                    ).getTime()
+                    >
+                    now
+                );
+
+            }
+        );
+
+
+    if (!next) {
+
+        document.getElementById(
+            "nextTitle"
+        ).textContent =
+            "行程已结束";
+
+        return;
+
+    }
+
+
+    const target =
+        new Date(
+            next.time
+        ).getTime();
+
+
+    let difference =
+        target - now;
+
+
+    let totalSeconds =
+        Math.floor(
+            difference / 1000
+        );
+
+
+    const days =
+        Math.floor(
+            totalSeconds / 86400
+        );
+
+
+    totalSeconds %= 86400;
+
+
+    const hours =
+        Math.floor(
+            totalSeconds / 3600
+        );
+
+
+    totalSeconds %= 3600;
+
+
+    const minutes =
+        Math.floor(
+            totalSeconds / 60
+        );
+
+
+    const seconds =
+        totalSeconds % 60;
+
+
+    document.getElementById(
+        "nextTitle"
+    ).textContent =
+        next.title;
+
+
+    document.getElementById(
+        "nextTime"
+    ).textContent =
+        "出发时间："
+        +
+        new Date(
+            next.time
+        ).toLocaleString(
+            "zh-CN",
+            {
+                timeZoneName:
+                    "short"
+            }
+        );
+
+
+    document.getElementById(
+        "days"
+    ).textContent =
+        String(days)
+        .padStart(2,"0");
+
+
+    document.getElementById(
+        "hours"
+    ).textContent =
+        String(hours)
+        .padStart(2,"0");
+
+
+    document.getElementById(
+        "minutes"
+    ).textContent =
+        String(minutes)
+        .padStart(2,"0");
+
+
+    document.getElementById(
+        "seconds"
+    ).textContent =
+        String(seconds)
+        .padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+</script>
+
+</body>
+</html>
